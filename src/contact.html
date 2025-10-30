@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar bg-base-100 shadow-sm">
+        <div class="container flex justify-between">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li><a href="/src/index.html">Home</a></li>
+                <li><a href="/src/about.html">About</a></li>
+                <li><a href="/src/portfolio.html">Portfolio</a></li>
+                <li><a href="/src/service.html">Service</a></li>
+                <li><a href="/src/contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">daisyUI</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="/src/index.html">Home</a></li>
+              <li><a href="/src/about.html">About</a></li>
+              <li><a href="/src/portfolio.html">Portfolio</a></li>
+              <li><a href="/src/service.html">Service</a></li>
+              <li><a href="/src/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a href="../public/cd.pdf" download="rima.pdf" class="btn"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- banner -->
+    <div
+      class="hero bg-center bg-no-repeat bg-cover"
+      style="background-image: url(../public/mission.jpg) "
+    >
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md py-20">
+          <h1 class="mb-5 text-5xl font-bold">Contact Page</h1>
+          <p class="mb-5">
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
+            a id nisi.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact us -->
+    <section class="container mt-20">
+      <div class="flex items-center justify-center flex-col  gap-5 mb-8">
+        <h1 class="title">Send us a Message</h1>
+        <p class="subTitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          sunt quo cumque fugit minima optio!
+        </p>
+      </div>
+      <div class="grid grid-cols-3 gap-4 mt-10">
+        <div class="card p-8 shadow-md col-span-2">
+          <form>
+            <div class="flex flex-col gap-1">
+              <label for="name">Name</label>
+              <input
+                class="input validator w-full"
+                type="name"
+                id="name"
+                required
+                placeholder="John Doe"
+              />
+              <div class="validator-hint">Enter valid email address</div>
+            </div>
+              <div class="flex flex-col gap-1">
+              <label for="fileUpload">Upload file (optional)</label>
+              <input
+                class="input w-full"
+                type="file"
+                id="fileUpload"
+                name="fileUpload"
+                accept=".jpg,.jpeg,.png,.pdf,.doc,.docx"
+              />
+              <div class="validator-hint">
+                You can submit documents or photographs
+              </div>
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="email">Email</label>
+              <input
+                class="input validator w-full"
+                type="email"
+                required
+                id="email"
+                placeholder="mail@site.com"
+              />
+              <div class="validator-hint">Enter valid email address</div>
+            </div>
+            <div class="flex flex-col gap-1   mb-4">
+              <label for="message">Message</label>
+              <textarea class="textarea w-full" id="message placeholder="Message here"></textarea>
+            </div>
+           
+            <button class="btn bg-primary" type="submit">Submit form</button>
+          </form>
+        </div>
+        <div class="card p-8 shadow-md">
+            <h1 class="text-2xl font-bold mb-5">Contact Information</h1>
+        <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+    <div class="flex flex-col pb-3">
+        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Email address</dt>
+        <dd class="text-lg font-semibold">yourname@flowbite.com</dd>
+    </div>
+    <div class="flex flex-col py-3">
+        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Home address</dt>
+        <dd class="text-lg font-semibold">92 Miles Drive, Newark, NJ 07103, California, USA</dd>
+    </div>
+    <div class="flex flex-col pt-3">
+        <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Phone number</dt>
+        <dd class="text-lg font-semibold">+00 123 456 789 / +12 345 678</dd>
+    </div>
+         </dl>
+
+        </div>
+      </div>
+    </section>
+    <section class="container mt-20">
+    <div class="flex items-center justify-center flex-col  gap-5 mb-8">
+        <h1 class="title">Find us with Map</h1>
+        <p class="subTitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          sunt quo cumque fugit minima optio!
+        </p>
+      </div>
+      <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14610.263165146423!2d90.34541499999999!3d23.72719515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sbn!2sbd!4v1761374887860!5m2!1sbn!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- footer -->
+    <footer
+      class="footer sm:footer-horizontal mt-10 footer-center bg-black text-white p-4"
+    >
+      <aside>
+        <p>
+          Copyright © <span id="year"></span> - All right reserved by Nazneen
+        </p>
+      </aside>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

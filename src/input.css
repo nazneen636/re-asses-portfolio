@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@layer components {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .title {
+    color: teal;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .subTitle {
+    opacity: 0.9;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 500px;
+  }
+}
